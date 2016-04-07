@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+  - source: source
+    destination: /home/ubuntu/
+hooks:
+   AfterInstall:
+     - location: Scripts/InstallApache.sh
+       timeout: 300
